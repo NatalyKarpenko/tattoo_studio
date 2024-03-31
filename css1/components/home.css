@@ -1,0 +1,182 @@
+.place {
+    display: inline-block;
+    width: 90px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.custom-button {
+    width: 188px;
+    /* Ширина кнопки */
+    height: 60px;
+    /* Высота кнопки */
+    border: 1px solid #B9262D;
+    /* Цвет обводки */
+    background-color: transparent;
+    /* Прозрачный фон */
+    font-size: 16px;
+    /* Размер текста */
+    font-weight: 500;
+    /* Жирный текст */
+    color: #000;
+    /* Цвет текста */
+    margin-top: 30px;
+    margin-bottom: 130px;
+}
+
+.custom-button:hover {
+    background-color: #B9262D;
+    /* Цвет фона при наведении */
+    color: #fff;
+    /* Цвет текста при наведении */
+}
+
+.home {
+    display: flex;
+    align-items: center;
+}
+
+.images-container {
+    margin-left: 79px;
+    position: relative;
+    /* Относительное позиционирование контейнера */
+    width: 790px;
+    /* Ширина контейнера равна ширине изображения */
+    height: 517px;
+    /* Высота контейнера равна высоте изображения */
+}
+
+.main-photo {
+    margin-top: -38px;
+    width: 380px;
+    /* Ширина изображения 100% контейнера */
+    height: 402px;
+    /* Высота изображения 100% контейнера */
+}
+
+.second-photo {
+    position: absolute;
+    /* Абсолютное позиционирование для второго изображения */
+    top: 77px;
+    /* Расстояние сверху */
+    margin-left: 30px;
+    /* Расстояние слева */
+    width: 380px;
+    /* Ширина изображения */
+    height: 402px;
+    /* Высота изображения */
+}
+
+.circle {
+    position: absolute;
+    /* Абсолютное позиционирование для круга */
+    width: 383px;
+    /* Ширина круга равна ширине изображения */
+    height: 383px;
+    /* Высота круга равна высоте изображения */
+    background-color: #AD000A;
+    /* Цвет круга */
+    border-radius: 50%;
+    /* Делаем круг */
+    filter: blur(100px);
+    /* Применяем эффект размытия */
+    z-index: -1;
+    /* Помещаем круг под изображениями */
+    top: 53px;
+    /* Расположение круга сверху */
+    left: -130px;
+    /* Расположение круга слева */
+}
+
+.circle1 {
+    position: absolute;
+    /* Абсолютное позиционирование для круга */
+    width: 383px;
+    /* Ширина круга равна ширине изображения */
+    height: 383px;
+    /* Высота круга равна высоте изображения */
+    background-color: #010101;
+    /* Цвет круга */
+    border-radius: 50%;
+    /* Делаем круг */
+    filter: blur(100px);
+    /* Применяем эффект размытия */
+    z-index: -1;
+    /* Помещаем круг под изображениями */
+    top: 230px;
+    /* Расположение круга сверху */
+    left: 205px;
+    /* Расположение круга слева */
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .main-photo {
+        width: 197px;
+        margin-top: 30px;
+    }
+
+    .images-container {
+        margin-left: -30px;
+        width: 399px;
+    }
+
+    .circle {
+        width: 300px;
+        height: 300px;
+        top: 140px;
+        left: -110px;
+        filter: blur(100px);
+    }
+
+    .second-photo {
+        width: 197px;
+        margin-left: 5px;
+    }
+
+    .circle1 {
+        width: 300px;
+        height: 300px;
+        left: 110px;
+        filter: blur(100px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .home {
+        flex-direction: column-reverse;
+    }
+
+    .section1 {
+        order: 2;
+        height: 550px;
+    }
+
+    .images-container {
+        order: 1;
+        margin-left: 0; /* Убираем отступ слева, так как фото будет под текстом */
+        margin-top: 20px; /* Добавляем небольшой отступ сверху */
+        height: 320px;
+    }
+    .main-photo {
+        width: 159px;
+        margin-top: -110px;
+        margin-left: 230px;
+    }
+    .circle {
+        width: 200px;
+        height: 200px;
+        top: -350px;
+        left: 200px;
+    }
+    .second-photo {
+        width: 159px;
+        margin-top: -120px;
+        margin-left: 5px;
+    }
+    .circle1 {
+        width: 250px;
+        height: 250px;
+        top: -150px;
+        left: 310px;
+    }
+}

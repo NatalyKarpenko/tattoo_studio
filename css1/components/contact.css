@@ -1,0 +1,144 @@
+.contact {
+    display: flex;
+    flex-direction: column; 
+    margin-top: 130px;
+    width: 1200px;
+    background-color: #FFD8DA;
+    position: relative;
+    margin-left: -20px;
+    margin-bottom: 110px;
+    padding-right: 100px;
+}
+
+.content-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact-text p {
+    margin-left: 80px;
+    text-align: justify;
+    font-weight: 500;
+    font-size: 16px;
+    width: 272px;
+}
+
+.contact-text,
+.contact-info,
+.contact-map {
+    flex: 1;
+
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.social-icons {
+    display: flex;
+    margin-top: 10px;
+}
+
+.social-icons .icon {
+    margin-right: 10px;
+}
+
+.contact h2 {
+    font-size: 35px; /* Размер шрифта */
+    font-weight: 700; /* Жирный шрифт */
+    color: #000000; /* Цвет текста */
+    margin-bottom: 86px; /* Отступ снизу */
+    margin-top: 100px;
+    margin-left: 80px;
+    width: 307px;
+}
+
+.contact-map img {
+    height: 330px;
+    border: 1px solid #B9262D; /* Толщина и цвет обводки */
+    margin-bottom: 100px;
+    margin-top: -70px;
+}
+
+.contact-info {
+    margin-left: 60px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .contact {
+        margin-top: 110px;
+        width: 720px;
+        height: 929px;
+    }
+    .contact h2 {
+        margin-bottom: 30px;
+    }
+    
+    .content-contact {
+        display: flex;
+        flex-direction: row; /* Элементы в строку */
+        flex-wrap: wrap; /* Разрешаем перенос на новую строку */
+        justify-content: space-between;
+    }
+
+    .contact-text {
+        width: 272px;
+        margin-right: 87px; /* Отступ между элементами */
+        margin-bottom: 20px; /* Отступ снизу */
+    }
+    .contact-info {
+        width: 200px; /* 50% минус отступы */
+        margin-bottom: 20px; /* Отступ снизу */
+    }
+    .contact-map img {
+        width: 560px; /* Занимает всю ширину */
+        height: 327px;
+        margin-top: 62px;
+        margin-left: 80px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact {
+        margin-top: 100px;
+        width: 320px;
+        height: auto;
+    }
+    .contact h2 {
+        width: 210px;
+        margin-top: 70px;
+        margin-left: 55px;
+    }
+    .content-contact {
+        display: flex;
+        flex-direction: column; /* Элементы в строку */
+        flex-wrap: wrap; /* Разрешаем перенос на новую строку */
+        justify-content: space-between;
+    }
+    .contact-text p{
+        width: 210px;
+        margin-right: 55px; /* Отступ между элементами */
+        margin-bottom: 50px; /* Отступ снизу */
+        margin-left: 55px;
+    }
+    .contact-info {
+        width: 200px; /* 50% минус отступы */
+        margin-bottom: 50px; /* Отступ снизу */
+        margin-left: 55px;
+    }
+    .contact-map img {
+
+        height: 280px;
+        margin-top: 50px;
+        margin-left: 55px;
+        margin-right: 55px;
+    }
+}

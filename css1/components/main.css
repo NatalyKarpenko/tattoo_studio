@@ -1,0 +1,18 @@
+@import "header.css";
+@import "logo.css";
+@import "nav.css";
+@import "container.css";
+@import "home.css";
+@import "artist.css";
+@import "services.css";
+@import "buttons-services.css";
+@import "dropdown-services.css";
+@import "back-to-top.css";
+
+@import "examples-section.css";
+@import "feedback-section.css";
+@import "contact.css";
+
+body.disable-scroll {
+    overflow: hidden;
+}

@@ -1,0 +1,157 @@
+.list1 {
+    display: flex;
+    /* Список располагается в столбик */
+    flex-direction: column;
+    /* Список в столбик */
+}
+
+.dropdown {
+    position: absolute;
+    top: 240px;
+    left: 500px;
+    /* Расположение справа от кнопок */
+    
+}
+
+.list1 li {
+    font-size: 20px;
+    font-weight: 700;
+    /* Жирный шрифт */
+    margin-bottom: 50px;
+    line-height: 128%;
+    width: 113px;
+    position: relative;
+    /* Относительное позиционирование для пунктов списка */
+    margin-right: 33px;
+}
+
+.title-dropdown h2 {
+    position: absolute;
+    top: 159px;
+    left: 438px;
+    /* Расположение справа от кнопок */
+    font-size: 25px;
+    /* Размер шрифта */
+    font-weight: 700;
+    /* Жирный шрифт */
+    color: #000000;
+    /* Цвет текста */
+}
+
+.additional-text {
+    position: absolute;
+    /* Абсолютное позиционирование для дополнительного текста */
+    top: 50%;
+    right: -530px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 472px;
+    transform: translateY(-50%);
+    /* Выравниваем текст по вертикали */
+    text-align: justify;
+}
+
+.numbers {
+    position: absolute;
+    top: 235px;
+    left: 438px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.list1 li {
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.list1 {
+    display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .title-dropdown h2 {
+        top: 121px;
+        left: 230px;
+    }
+
+    .numbers {
+        top: 181px;
+        left: 227px;
+    }
+
+    .dropdown {
+        top: 181px;
+        left: 282px;
+    }
+
+    .list1 li {
+        white-space: normal;
+        width: 91px;
+        word-wrap: break-word;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+    
+    /* Стили для абзаца внутри элемента списка */
+    .list1 li p.additional-text {
+        width: 316px; /* Устанавливаем нужную ширину */
+        overflow: visible; /* Разрешаем видимость содержимого, которое может выходить за пределы */
+        left: 100px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title-dropdown h2 {
+        margin-left: 21px;
+        position: relative; /* Изменяем позиционирование на относительное */
+        top: auto; /* Снимаем явно заданное значение top */
+        left: auto; /* Снимаем явно заданное значение left */
+        margin-bottom: 30px; 
+    }
+
+    .numbers {
+        display: none; /* Скрываем элемент в мобильном представлении */
+    }       
+    
+    .dropdown {
+        position: absolute; /* Используем абсолютное позиционирование */
+        top: 525px; /* Перемещаем список вниз относительно родительского контейнера */
+        left: 8px; /* Располагаем список слева относительно родительского контейнера */
+    }
+    .list1 {
+        display: block; /* Изменяем отображение списка на блочное */
+    }
+    .list1 {
+        display: none;
+    }
+
+    .list1 li {
+        /* Удаляем или сбрасываем все стили, заданные для элементов списка в основном коде */
+        margin-bottom: 80px;
+        line-height: initial;
+        width: initial;
+
+        margin-right: initial;
+    }
+
+    .additional-text {
+        /* Удаляем или сбрасываем все стили, заданные для дополнительного текста в основном коде */
+
+        top: initial;
+        right: initial;
+        width: 300px;
+        transform: initial;
+        margin-top: 15px;
+    }
+}

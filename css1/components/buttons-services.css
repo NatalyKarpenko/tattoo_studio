@@ -1,0 +1,76 @@
+.button {
+    margin-top: 175px;
+    /* Отступ сверху для первой кнопки */
+    margin-left: 45px;
+}
+
+button {
+    width: 329px;
+    height: 89px;
+    display: flex;
+    /* Список располагается в столбик */
+    flex-direction: column;
+    /* Список в столбик */
+    justify-content: center;
+    /* Выравниваем содержимое по вертикали */
+    align-items: center;
+    /* Выравниваем содержимое по горизонтали */
+    margin-bottom: 30px;
+    /* Отступ между кнопками */
+    font-size: 18px;
+    /* Размер шрифта */
+    font-weight: 700;
+    /* Жирный шрифт */
+    color: #000000;
+    /* Цвет текста */
+    background-color: #F9A2A6;
+    /* Цвет фона кнопки */
+    border: none;
+    /* Убираем границу кнопки */
+    padding: 10px 20px;
+    /* Внутренние отступы кнопки */
+    border-radius: 2px;
+    /* Скругляем углы кнопки */
+}
+
+
+.button button:focus {
+    /* Изменяем цвет кнопки при нажатии */
+    background-color: #B9262D;
+    color: #FFFFFF;
+}
+
+.button button:last-child {
+    margin-bottom: 0;
+    /* У последней кнопки убираем отступ снизу */
+}
+
+.button button:hover {
+    cursor: pointer;
+    /* Изменяем курсор при наведении на кнопку */
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .button {
+        margin-top: 100px;
+        margin-left: 18px;
+        margin-bottom: 120px;
+    }
+
+    button {
+        width: 190px;
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .button {
+        margin-top: 136px;
+        margin-left: 10px;
+        margin-bottom: 40px;
+    }
+    button {
+        width: 300px;
+        height: 80px;
+    }
+}

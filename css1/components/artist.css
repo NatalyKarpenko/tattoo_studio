@@ -1,0 +1,88 @@
+.artists .h2 {
+    font-size: 32px;
+    width: 242px;
+    margin-top: 130px;
+    margin: 0 auto;
+    /* Центрирование по горизонтали */
+}
+
+.artists {
+    text-align: center;
+    /* Центрирование элементов */
+}
+
+.artist-images-container {
+    display: flex;
+    /* Используем flexbox */
+    justify-content: space-between;
+    /* Равномерное распределение между элементами */
+    margin-top: 69px;
+    /* Отступ сверху */
+}
+
+.artist-image {
+    width: 300px;
+    /* Ширина изображений */
+    height: 308px;
+    /* Автоматическая высота для сохранения пропорций */
+    margin-bottom: 35px;
+}
+
+.artist-title {
+    font-size: 25px;
+    width: 102px;
+    margin-top: 35px;
+    margin: 0 auto;
+    /* Центрирование по горизонтали */
+    font-weight: 700;
+}
+
+.artist-text {
+    width: 300px;
+    /* Ширина текста */
+    height: 144px;
+    /* Высота текста */
+    margin-top: 20px;
+    /* Отступ сверху */
+    line-height: 143%;
+    text-align: justify;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .artists .h2 {
+        font-size: 30px;
+    }
+
+    .artist-text {
+        width: 200px;
+    }
+    .artist-title {
+        margin-left: 0;
+    }
+    .artist-images-container {
+        margin-top: 60px;
+        /* Отступ сверху */
+    }
+
+    .artist-image {
+        width: 200px;
+        height: 210px;
+        margin-bottom: 23px;        
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .artist-images-container {
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+        margin-left: -20px;
+    }
+    
+    .artist-image {
+        width: 320px; /* Задаем ширину фото на 100%, чтобы оно занимало всю доступную ширину контейнера */
+        height: 300px;
+        margin-bottom: 20px; /* Добавляем отступ между фото и подписью */
+    }
+}
+

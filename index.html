@@ -1,0 +1,223 @@
+<html>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-
+    scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+<head>
+    <link rel="stylesheet" href="./css1/main.css">
+    <title>Signum Tattoo</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="overlay"></div>
+            <a href="" class="logo">
+                <img src="./img/svg/logo.svg" alt="">
+            </a>
+            <nav class="nav">
+                <ul class="list">
+                    <li class="item">
+                        <a class="link" href="#index">Головна</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="#artists">Майстри</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="#services">Послуги</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="#examples">Галерея</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="#feedback">Відгуки</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="#contact">Контакти</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="" class="place">
+                <img src="./img/svg/знак.svg" alt="">
+            </a>
+            <button class="nav-btn">
+                <span class="nav-btn-line"></span>
+                <span class="nav-btn-line"></span>
+                <span class="nav-btn-line"></span>
+            </button>
+        </header>
+        <section id="index" class="home">
+            <div class="section1">
+                <h1 class="h1">Студія татуювання</h1>
+                <h2 class="h2">Головна місія</h2>
+                <p class="main_mision">Наша основна місія полягає в створені татуювань, які не лише виражають зовнішню
+                    красу, але й відображають всю багатогранність особистості та унікальність характеру.</p>
+                <button class="custom-button">Зв’язатися з нами</button>
+            </div>
+            <div class="images-container">
+                <img src="img/svg/Rectangle 9.svg" alt="" class="main-photo">
+                <div class="circle"></div>
+                <img src="img/svg/Rectangle 10.svg" alt="" class="second-photo">
+                <div class="circle1"></div>
+            </div>
+        </section>
+        <section id="artists" class="artists">
+            <h2 class="h2">Наші майстри</h2>
+            <div class="artist-images-container">
+                <div class="artist">
+                    <img src="img/jpg/1.jpg" alt="" class="artist-image">
+                    <h2 class="artist-title">Вікторія</h2>
+                    <p class="artist-text">Кожен її проєкт - елегантна витонченість ліній, що виражає глибокий сенс та
+                        вибухову красу. Довірте Вікторії створити для вас татуювання, яке буде мовою вашої унікальності.
+                    </p>
+                </div>
+                <div class="artist">
+                    <img src="img/jpg/2.jpg" alt="" class="artist-image">
+                    <h2 class="artist-title">Олівія</h2>
+                    <p class="artist-text">Кожен її твір - це як живе полотно, де кожна квітка та крапля кольору має
+                        своє значення. Дайте Олівії можливість перетворити ваші ідеї на чудові татуювання, наповнені
+                        природною красою.</p>
+                </div>
+                <div class="artist">
+                    <img src="img/jpg/3.jpg" alt="" class="artist-image">
+                    <h2 class="artist-title">Жульєн</h2>
+                    <p class="artist-text">Кожен його проєкт - подорож у світ витонченої деталізації та
+                        сміливого використання кольору. Жульєн вміло комбінує класичні техніки та сучасний стиль,
+                        розповідаючи унікальні історії.</p>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="services">
+            <h2>Послуги, яки ми надаємо</h2>
+            <div class="button">
+                <button class="focus" onclick="showList('list1')">Татуювання</button>
+                <button onclick="showList('list2')">Перекриття</button>
+                <button onclick="showList('list3')">Пірсинг</button>
+            </div>
+            <div class="title-dropdown">
+                <h2>Робочий процес</h2>
+            </div>
+            <div class="numbers">
+                <img src="img/svg/numbers.svg" alt="">
+            </div>
+            <div class="dropdown">
+                <ul id="list1" class="list1">
+                    <li>Консультація<p class="additional-text">На цьому етапі майстри вивчають ваші ідеї та створюють
+                            унікальний дизайн.</p>
+                    </li>
+                    <li>Тестування<p class="additional-text">На цьому етапі ви можете переглянути ескіз та внести
+                            потрібні зміни.</p>
+                    </li>
+                    <li>Виконання<p class="additional-text">На фінальному етапі майстер утілює ваш унікальний дизайн.
+                        </p>
+                    </li>
+                </ul>
+                <ul id="list2" class="list1" style="display: none;">
+                    <li>Оцінка<p class="additional-text">Зустріч з майстром, оцінка старого
+                            татуювання, визначення перекриття.</p>
+                    </li>
+                    <li>Розробка<p class="additional-text">Майстри розробляють новий дизайн для
+                            перекриття старого татуювання.</p>
+                    </li>
+                    <li>Перекриття<p class="additional-text">Майстри перекриває старе татуювання з урахуванням деталей.
+                        </p>
+                    </li>
+                </ul>
+                <ul id="list3" class="list1" style="display: none;">
+                    <li>Консультація<p class="additional-text">Підібраємо найкращий тип та
+                            місце для пірсингу.</p>
+                    </li>
+                    <li>Виконання<p class="additional-text">Виконуємо пірсинг зі стерильним обладнанням.</p>
+                    </li>
+                    <li>Догляд<p class="additional-text">Після пірсингу ми надаємо інструкції та підтримку протягом
+                            загоєння.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="examples" class="examples">
+            <h2>Галерея робіт</h2>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide"><img src="img/svg/work1.svg" alt="Photo 1"></div>
+                    <div class="slide"><img src="img/svg/work2.svg" alt="Photo 2"></div>
+                    <div class="slide"><img src="img/svg/work3.svg" alt="Photo 3"></div>
+                    <div class="slide"><img src="img/svg/work4.svg" alt="Photo 4"></div>
+                    <div class="slide"><img src="img/svg/work5.svg" alt="Photo 5"></div>
+                    <div class="slide"><img src="img/svg/work6.svg" alt="Photo 6"></div>
+                    <div class="slide"><img src="img/svg/work7.svg" alt="Photo 7"></div>
+                    <div class="slide"><img src="img/svg/work8.svg" alt="Photo 8"></div>
+                    <div class="slide"><img src="img/svg/work9.svg" alt="Photo 9"></div>
+                    <div class="slide"><img src="img/svg/work11.svg" alt="Photo 10"></div>
+                </div>
+                <button class="button prev" onclick="prevSlide()">←</button>
+                <button class="button next" onclick="nextSlide()">→</button>
+            </div>
+        </section>
+        <section id="feedback" class="feedback">
+            <h3>Відгуки клієнтів</h2>
+                <div class="client-images-container">
+                    <div class="client">
+                        <img src="img/jpg/client1.jpg" alt="" class="client-image">
+                        <h2 class="client-title">Benjamin</h2>
+                        <p class="client-text">Вражений творчістю та витонченістю Вікторії. Вона не просто майстер, а
+                            справжній художник на тілі. Результат перевершує усі очікування. Рекомендую всім, хто шукає
+                            справжню майстерність.
+                        </p>
+                    </div>
+                    <div class="client">
+                        <img src="img/jpg/client2.jpg" alt="" class="client-image">
+                        <h2 class="client-title">Маргарита</h2>
+                        <p class="client-text">Не можу описати словами, настільки вражена результатами перекриття в
+                            SIGNUM TATTOO. Жульєн виявився майстром своєї справи. Вдячна за почуття впевненості та
+                            свободи на своєму тілі.</p>
+                    </div>
+                    <div class="client">
+                        <img src="img/jpg/client3.jpg" alt="" class="client-image">
+                        <h2 class="client-title">Daniel</h2>
+                        <p class="client-text">Справжня зірка серед тату студій! Кожен з майстрів SIGNUM TATTOO
+                            справжній професіонал. Студія створює атмосферу тепла та творчості. Велике дякую за
+                            неймовірний досвід та творіння на моєму тілі.</p>
+                    </div>
+                    <div class="client">
+                        <img src="img/jpg/client4.jpg" alt="" class="client-image">
+                        <h2 class="client-title">Sebastian</h2>
+                        <p class="client-text">Неймовірно задоволений. Жульєн вміє створювати справжні шедеври. Моє тату
+                            - шикарна істрія на тілі, що вражає деталями та кольорами. Рекомендую всім, хто шукає
+                            креатив та індивідуальність.</p>
+                    </div>
+                </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Давайте зробимо це разом</h2>
+            <div class="content-contact">
+                <div class="contact-text">
+                    <p>Наша історія в тату-сфері почалась у 2017 році. Сьогодні, з накопиченим досвідом та ентузіазмом
+                        до
+                        створення мистецтва на тілі, ми готові знайти найкращі рішення для ваших побажань та виразити
+                        вашу
+                        унікальність у формі татуювань.</p>
+                </div>
+                <div class="contact-info">
+                    <p>Телефон:</p>
+                    <p>+47 405 89 206</p>
+                    <p>Email:</p>
+                    <p>signum_tattoo@gmail.com</p>
+                    <p>Соціальні мережі:</p>
+                    <div class="social-icons">
+                        <img class="icon" src="./img/svg/insta.svg" alt="">
+                        <img class="icon" src="./img/svg/facebook.svg" alt="">
+                        <img class="icon" src="./img/svg/tiktok.svg" alt="">
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <img src="img/jpg/map.jpg" alt="">
+                </div>
+            </div>
+        </section>
+    </div>
+    <button id="back-to-top" title="Наверх">&#9650;</button>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+.h1 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 128%;
+    color: #000000;
+    width: 333px;
+    margin-top: 100px; 
+}
+
+.h2 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 143%;
+    color: #000000;
+    width: 119px;
+    margin-top: 96px; 
+}
+
+.main_mision {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 143%;
+    color: #000000;
+    width: 322px;
+    margin-top: 30px; 
+    text-align: justify;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .h1 {
+        font-size: 40px;
+    }
+    .h2 {
+        margin-top: 50px;
+    }
+    .main_mision {
+        width: 245px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .h1 {
+        font-size: 36px;
+    }
+    .main_mision {
+        width: 320px;
+    }
+}

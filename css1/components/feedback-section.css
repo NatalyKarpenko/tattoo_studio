@@ -1,0 +1,81 @@
+.feedback h3 {
+    font-weight: 700;
+    font-size: 35px;
+    margin-top: 172px;
+}
+
+.client {
+    text-align: center; /* Центрирование элементов */
+}
+
+.client-images-container {
+    display: flex; /* Используем flexbox */
+    justify-content: space-between; /* Равномерное распределение между элементами */
+    margin-top: 25px; /* Отступ сверху */
+}
+
+.client-image {
+    width: 200px; /* Ширина изображений */
+    height: 200px; /* Автоматическая высота для сохранения пропорций */
+    margin-bottom: 23px;
+}
+
+.client-title {
+    font-weight: 700;
+    font-size: 25px;
+    width: 113px;
+    font-weight: 700;
+}
+
+.client-text {
+    width: 200px; /* Ширина текста */
+    height: 180px; /* Высота текста */
+    margin-top: 18px; /* Отступ сверху */
+    line-height: 143%;
+    text-align: justify; /* Выравнивание текста по ширине */
+    word-spacing: 3px; /* Увеличение расстояния между словами */
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .feedback h3 {
+        font-size: 30px;
+        margin-top: 110px;
+    }
+    .client-images-container {
+        margin-top: 32px;
+    }
+    .client-image {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 17px;
+    }
+    .client-text {
+        width: 151px;
+        height: 230px;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .feedback h3 {
+        font-size: 30px;
+        margin-top: 110px;
+    }
+    .client-image {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 15px;
+
+    }
+    .client-images-container {
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+        margin-left: -20px;
+    }
+    .client-text {
+        width: 320px;
+        height: auto;
+        margin-bottom: 40px;
+    }
+}

@@ -1,0 +1,36 @@
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.list {
+    display: flex;
+    list-style-type: none;
+    /* Убираем маркеры списка */
+    padding: 0;
+}
+
+.item {
+    margin-right: 40px;
+}
+
+.link {
+    text-decoration: none;
+    color: #000;
+    /* Цвет ссылок */
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .item {
+        margin-right: 15px;
+    }
+    .nav-btn {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .nav-btn {
+        display: none;
+    }
+}
